@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s;
+  }
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url(/assets/img/murallachina.jpg);
+    overflow-x: hidden;
+      min-height: 100vh;
+  }
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(20px);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 20px 20px rgba(95, 0, 107, 0.397);
+    z-index: 999999999999999999999999999999999999999999999999999999999;
+}
+.logo-barranav {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  /* Ajusta el ancho para ocupar toda la barra de navegación */
+  }
+header ul {
+    display: flex;
+    gap: 30px;
+    margin: auto;  /* Centra la lista horizontalmente */
+    padding: 0;  /* Elimina el relleno por defecto del ul */
+    list-style: none;  /* Elimina los puntos de la lista */
+}
+header ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+  
+header .search {
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    z-index: 99999999999999999;
+    cursor: pointer;
+}
+.searchBox {
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: rgb(80, 49, 78);
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .searchBox.active {
+    right: 0;
+  }
+  
+  .searchBox input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    height: 50px;
+    font-size: 1.25em;
+    background: rgb(80, 49, 78);
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  
+  .searchBtn {
+    position: relative;
+    left: 30px;
+    top: 2.5px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .searchBtn.active {
+    left: 0;
+  }
+  .searchBtn.active {
+    left: 0;
+  }
+  
+  .closeBtn {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    scale: 0;
+  }
+  
+  .closeBtn.active {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    scale: 1;
+  }
+  .container {
+    margin-top: 80px;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #ffffff00;
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  
+  }
+  .container header {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+  }
+  .container .form {
+    margin-top: 30px;
+  }
+  .form .input-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .input-box label {
+    color: #ffffff;
+  }
+  .form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 15px;
+  }
+  .input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  .form .column {
+    display: flex;
+    column-gap: 15px;
+  }
+  .form .gender-box {
+    margin-top: 20px;
+  }
+  .gender-box h3 {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .form .gender {
+    column-gap: 5px;
+  }
+  .gender input {
+    accent-color: rgb(130, 106, 251);
+  }
+  .form :where(.gender-option2, .gender2) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .form .gender2 {
+    column-gap: 5px;
+  }
+    .gender2 input {
+    accent-color: rgb(130, 106, 251);
+  }
+  .form :where(.gender-option3, .gender3) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .form .gender3 {
+    column-gap: 5px;
+  }
+    .gender3 input {
+    accent-color: rgb(130, 106, 251);
+  }
+  .form :where(.gender-option4, .gender4) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .form .gender4 {
+    column-gap: 5px;
+  }
+    .gender4 input {
+    accent-color: rgb(130, 106, 251);
+  }
+  .form :where(.gender-option5, .gender5) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .form .gender5 {
+    column-gap: 5px;
+  }
+    .gender5 input {
+    accent-color: rgb(130, 106, 251);
+  }
+  .form :where(.gender-option6, .gender6) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .form .gender6 {
+    column-gap: 5px;
+  }
+    .gender6 input {
+    accent-color: rgb(130, 106, 251);
+  }
+  footer{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #1414149c;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -400px;
+    left: 0;
+  }
+  .logo{
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .social-icon{
+    height: 50px;
+    width: 80px;
+    border-radius: 50px;
+    background-image: url(/assets/img/icons8-facebook-24.png);
+    background-position: center; 
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  
+  .social-icon:hover{
+    background-color: rgb(245, 7, 165);
+  }
+  
+  .social-icon:nth-of-type(2){
+    background-image: url(/assets/img/icons8-instagram-24.png);
+  }
+  
+  .social-icon:nth-of-type(3){
+    background-image: url(/assets/img/icons8-youtube-24.png);
+  }
+  
+  .social-icon:nth-of-type(4){
+    background-image: url(/assets/img/icons8-whatsapp-24.png);
+  }
+  
+  .social-icon:nth-of-type(5){
+    background-image: url(/assets/img/icons8-pinterest-50.png);
+  }
+  .footer-menu-container{
+    list-style-type:none;
+    color: #f2f2f2;
+    font-size: 18px;
+  }
+  
+  .menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  .menu-item:hover{
+    opacity: 1;
+  }
+  
+  .copyright{
+    color: #e0e0e0;
+    opacity: 0.3;
+    text-align: center;
+  }
