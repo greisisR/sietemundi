@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assets/css/formulario.css" />
+
+    <link rel="icon" type="image/ico" href="/favicon/icono.ico">
+
+  </head>
+  <body>
+
+    <!-- Barra de navegación -->
+
+    <header>
+
+      <a href="/principal.html" class="logo-barranav">7MUNDI</a>
+      <div class="group">
+          <ul class="barra-navegacion">
+              <li><a href="/petra.html">Petra</a></li>
+              <li><a href="/coliseo.html">Coliseo Romano</a></li>
+              <li><a href="/chichen.html">Chichen Itzá</a></li>
+              <li><a href="/muralla.html">Gran Muralla China</a></li>
+              <li><a href="/machupichu.html">Machu Picchu</a></li>
+              <li><a href="/cristo.html">Cristo Redentor</a></li>
+              <li><a href="/tajmahal.html">Taj Mahal</a></li>
+              <li><a href="/formulario.html">Registrarse</a></li>
+          </ul>
+          <div class="search">
+              <span class="icono-buscador">
+                  <ion-icon name="search-outline"
+                  class="searchBtn"></ion-icon>
+                  <ion-icon name="close-outline"
+                  class="closeBtn"></ion-icon>
+              </span>
+          </div>
+      </div>
+      <div class="searchBox">
+          <input type="text" placeholder="Buscar...">
+      </div>
+
+  </header>
+<!-- Fin Barra de navegación -->
+
+    
+    <section class="container">
+      <header>Formulario de Registro</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Nombre Completo</label>
+          <input type="text" placeholder="Ingresa nombre completo" required />
+        </div>
+
+        <div class="input-box">
+          <label>Correo Electrónico</label>
+          <input type="text" placeholder="Ingresa tu correo" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Teléfono</label>
+            <input type="number" placeholder="Ejem: +58-1234567897" required />
+          </div>
+          <div class="input-box">
+            <label>Fecha de nacimiento</label>
+            <input type="date" placeholder="Ingresa tu fecha de nacimiento" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Género</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Hombre</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Mujer</label>
+            </div>           
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Prefiero no decirlo</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Dirección</label>
+          <input type="text" placeholder="Ingresa tu dirección" required />
+          
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>País</option>
+                <option>Venezuela</option>
+                <option>Colombia</option>
+                <option>Japon</option>
+                <option>italia</option>
+                <option>Argentina</option>
+                <option>Paraguay</option>
+                <option>Brasil</option>
+                <option>Chile</option>
+                <option>Mexico</option>
+                <option>Canadá</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Ciudad" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Estado" required />
+            <input type="number" placeholder="Código postal" required />
+          </div>
+        </div>
+        <button>Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <img src="/assets/img/Logo png.png" alt="" class="logo">
+      <div class="social-icons-container">
+          <a href="" class="social-icon"></a>
+          <a href="" class="social-icon"></a>
+          <a href="" class="social-icon"></a>
+          <a href="" class="social-icon"></a>
+      </div>
+     
+      <span class="copyright">Todos los derechos reservados - Juslenis Ramirez - 2024</span>
+  </footer>
+
+
+
+  </body>
+</html>

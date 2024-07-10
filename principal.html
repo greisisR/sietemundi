@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las 7 maravillas del mundo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaini&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaini&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/principal.css">
+    <link rel="icon" type="image/ico" href="/favicon/icono.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/principal.html"><img src="/assets/img/Logo png.png" alt="logo img"></a>
+        <nav class="navbar">
+            <a href="/petra.html">Petra</a>
+            <a href="/coliseo.html">Coliseo Romano</a>
+            <a href="/chichen.html">Chichen Itzá</a>
+            <a href="/muralla.html">Gran Muralla China</a>
+            <a href="/machupichu.html">Machu Picchu</a>
+            <a href="/cristo.html">Cristo Redentor</a>
+            <a href="/tajmahal.html">Taj Mahal</a>
+            <a href="/formulario.html">Registrarse</a>
+        </nav>
+        <div class="fas fa-bars-progress icon" id="menu-btn"></div>
+    </header>
+
+    <main class="hero-section" id="hero-section">
+        <div class="background">
+            <div class="hero-section-title">
+                <h2 class="hero-section-title-2">Las 7 Maravillas del Mundo</h2>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="/assets/img/Logo png.png" alt="" class="logo">
+        <div class="social-icons-container">
+            <a href="" class="social-icon"></a>
+            <a href="" class="social-icon"></a>
+            <a href="" class="social-icon"></a>
+            <a href="" class="social-icon"></a>
+        </div>
+        <ul class="footer-menu-container">
+            <li class="menu-item">Inicio</li>
+            <li class="menu-item">Contáctanos</li>
+            <li class="menu-item">Mundo Antiguo</li>
+            <li class="menu-item">Más Maravillas</li>
+            <li class="menu-item">Viajar ahora</li>
+            <li class="menu-item">Iniciar sesión</li>
+        </ul>
+        <span class="copyright">Todos los derechos reservados - Juslenis Ramirez - 2024</span>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // custom main js file build by JeanDoe
+
+const body = document.body;
+const themeBtn = document.getElementById('theme-btn');
+const navbar = document.querySelector('.header .navbar');
+const menuBtn = document.getElementById('menu-btn');
+
+if(themeBtn){
+    themeBtn.addEventListener('click', () => {
+        body.classList.toggle('dark');
+    })
+}
+
+if(menuBtn){
+    menuBtn.addEventListener('click', () =>{
+        navbar.classList.toggle('active');
+    })
+}
+    </script>
+</body>
+
+</html>
